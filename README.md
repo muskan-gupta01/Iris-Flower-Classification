@@ -26,7 +26,10 @@ The project uses a trained **Random Forest Classifier** to classify flowers into
 
 Users can enter flower measurements manually or upload a CSV file to generate predictions for multiple records.
 
-The application is developed using **Python and Streamlit** and provides an interactive dashboard with prediction results, probability scores, data visualizations, model evaluation metrics, and downloadable prediction reports.
+Developed using Python and Streamlit, the application provides an interactive dashboard with prediction results, probability scores, data visualizations, model evaluation metrics, and downloadable prediction reports.
+
+**GitHub Repository:**
+https://github.com/muskan-gupta01/Iris-Flower-Classification
 
 ---
 
@@ -215,7 +218,7 @@ The application provides an interactive dashboard with the following sections:
 ## 📂 Project Structure
 
 ```text
-Iris-MLOps-Project-Public/
+Iris-Flower-Classification/
 │
 ├── Iris-MLOps-Project.ipynb
 │
@@ -247,13 +250,13 @@ Follow these steps to run the project on your local system.
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/muskan-gupta01/Iris-MLOps-Project-Public.git
+git clone https://github.com/muskan-gupta01/Iris-Flower-Classification.git
 ```
 
 ### Step 2: Navigate to the Project Folder
 
 ```bash
-cd Iris-MLOps-Project-Public
+cd Iris-Flower-Classification
 ```
 
 ### Step 3: Create a Virtual Environment (Recommended)
@@ -383,7 +386,7 @@ It also provides practical learning experience in Python programming, data analy
 
 <p align="center">
   <b>🌸 Iris Flower Classification System</b>
-  <br>
+  <br><br>
   Machine Learning | Data Analysis | Streamlit
   <br><br>
   Developed as an academic project at Invertis University, Bareilly.
