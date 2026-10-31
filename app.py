@@ -118,7 +118,7 @@ def show_flower_image(species):
 # LOAD SAVED MODEL
 # ---------------------------------------------------------
 
-MODEL_PATH = Path(__file__).resolve().parent / ""
+MODEL_PATH = Path(__file__).resolve().parent / "iris_random_forest_model.joblib"
 
 
 @st.cache_resource
