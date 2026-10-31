@@ -1,7 +1,7 @@
-# 🌸 Iris MLOps Project – AI Flower Classification System
+# 🌸 Iris Flower Classification System
 
 <p align="center">
-  <b>A Machine Learning Web Application for Iris Flower Species Prediction</b>
+  <b>An Interactive Machine Learning Web Application for Iris Flower Species Prediction</b>
 </p>
 
 <p align="center">
@@ -9,24 +9,24 @@
   <img src="https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green" alt="Machine Learning">
   <img src="https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit" alt="Streamlit">
   <img src="https://img.shields.io/badge/Library-Scikit--learn-orange?logo=scikitlearn" alt="Scikit-learn">
-  <img src="https://img.shields.io/badge/Status-Development-success" alt="Project Status">
+  <img src="https://img.shields.io/badge/Status-Academic%20Project-success" alt="Project Status">
 </p>
 
 ---
 
 ## 📌 Project Overview
 
-The **Iris MLOps Project** is a Machine Learning-based web application that predicts the species of an Iris flower using four physical measurements.
+The **Iris Flower Classification System** is a Machine Learning-based web application that predicts the species of an Iris flower using four physical measurements.
 
-The application uses a trained **Random Forest Classifier** to classify flowers into three different Iris species:
+The project uses a trained **Random Forest Classifier** to classify flowers into three species:
 
 * Iris Setosa
 * Iris Versicolor
 * Iris Virginica
 
-Users can enter flower measurements manually or upload a CSV file to generate predictions for multiple flower records.
+Users can enter flower measurements manually or upload a CSV file to generate predictions for multiple records.
 
-The application also provides data visualization, model performance analysis, prediction history, and downloadable prediction results through an interactive Streamlit dashboard.
+The application is developed using **Python and Streamlit** and provides an interactive dashboard with prediction results, probability scores, data visualizations, model evaluation metrics, and downloadable prediction reports.
 
 ---
 
@@ -34,29 +34,30 @@ The application also provides data visualization, model performance analysis, pr
 
 The main objectives of this project are:
 
-* To understand the complete Machine Learning workflow.
-* To explore and analyze the Iris dataset.
-* To train a classification model using Random Forest.
-* To evaluate the trained model using different performance metrics.
-* To develop an interactive web application using Streamlit.
-* To predict Iris flower species using user-provided measurements.
-* To support multiple predictions through CSV file upload.
+* Understand the fundamental Machine Learning workflow.
+* Explore and analyze the Iris dataset.
+* Perform data preparation and feature analysis.
+* Train a classification model using Random Forest.
+* Evaluate model performance using classification metrics.
+* Develop an interactive web application using Streamlit.
+* Enable single and multiple flower predictions.
+* Present prediction results through visualizations and downloadable reports.
 
 ---
 
 ## 📊 Dataset Information
 
-This project uses the **Iris Dataset**, a popular dataset for learning Machine Learning classification.
+This project uses the **Iris Dataset** provided by Scikit-learn.
 
-The dataset contains:
+It is a commonly used dataset for supervised Machine Learning classification problems.
 
-| Dataset Information | Details                   |
-| ------------------- | ------------------------- |
-| Total Records       | 150                       |
-| Total Features      | 4                         |
-| Target Classes      | 3                         |
-| Problem Type        | Classification            |
-| Dataset Source      | Scikit-learn Iris Dataset |
+| Dataset Information  | Details                   |
+| -------------------- | ------------------------- |
+| Total Records        | 150                       |
+| Total Input Features | 4                         |
+| Target Classes       | 3                         |
+| Problem Type         | Classification            |
+| Dataset Source       | Scikit-learn Iris Dataset |
 
 ### Input Features
 
@@ -71,6 +72,8 @@ The model uses the following four measurements:
 
 ### Target Classes
 
+The model predicts one of the following species:
+
 1. Setosa
 2. Versicolor
 3. Virginica
@@ -79,9 +82,9 @@ The model uses the following four measurements:
 
 ## 🤖 Machine Learning Model
 
-The project uses the **Random Forest Classifier**, a supervised Machine Learning algorithm used for classification tasks.
+The project uses the **Random Forest Classifier**, a supervised Machine Learning algorithm used for classification.
 
-Random Forest combines multiple Decision Trees and uses their predictions to produce the final classification.
+Random Forest combines multiple Decision Trees and uses their predictions to determine the final output.
 
 ### Model Configuration
 
@@ -95,13 +98,16 @@ Random Forest combines multiple Decision Trees and uses their predictions to pro
 
 ### Model Training Workflow
 
+The Machine Learning workflow includes:
+
 1. Load the Iris dataset.
 2. Separate input features and target labels.
 3. Split the dataset into training and testing sets.
 4. Train the Random Forest Classifier.
 5. Generate predictions using test data.
-6. Evaluate the model performance.
-7. Save the trained model using Joblib.
+6. Evaluate the model using classification metrics.
+7. Perform 5-fold stratified cross-validation.
+8. Save the trained model using Joblib.
 
 The trained model is saved as:
 
@@ -111,7 +117,7 @@ The trained model is saved as:
 
 ## 📈 Model Evaluation
 
-The model is evaluated using different classification metrics:
+The model is evaluated using the following performance metrics:
 
 * Accuracy Score
 * Precision
@@ -121,30 +127,30 @@ The model is evaluated using different classification metrics:
 * Confusion Matrix
 * 5-Fold Cross-Validation
 
-These evaluation methods help understand how well the model classifies the three Iris flower species.
+These metrics help assess the classification performance of the trained model.
 
-The application also provides visual representations of model performance.
+The Streamlit application also provides visual representations of model performance, including a confusion matrix and feature importance.
 
 ---
 
 ## ✨ Application Features
 
-The project includes an interactive dashboard with the following sections:
+The application provides an interactive dashboard with the following sections:
 
 ### 1. 🏠 Home
 
 * Project introduction.
-* Overview of the Iris classification system.
+* Overview of the classification system.
 * Information about the three Iris species.
-* Quick navigation to application features.
+* Navigation to application features.
 
 ### 2. 🔍 Flower Prediction
 
 * Enter four flower measurements.
 * Predict the Iris flower species.
-* Display prediction confidence.
-* View prediction probabilities.
-* Display the predicted flower image.
+* View prediction probability.
+* Display class-wise prediction probabilities.
+* View the predicted flower image.
 
 ### 3. 📊 Data Visualization
 
@@ -167,7 +173,7 @@ The project includes an interactive dashboard with the following sections:
 
 * View previous predictions during the current session.
 * Check flower measurements.
-* View predicted species and confidence.
+* View predicted species and probability.
 * Download prediction history as a CSV file.
 * Clear prediction history.
 
@@ -176,9 +182,9 @@ The project includes an interactive dashboard with the following sections:
 * Upload a CSV file.
 * Validate uploaded data.
 * Preview input records.
-* Predict multiple flower species.
-* Display prediction results and confidence scores.
-* Download results as a CSV file.
+* Generate predictions for multiple flowers.
+* View prediction results and probabilities.
+* Download prediction results as a CSV file.
 
 ### 7. 📚 About Project
 
@@ -200,7 +206,7 @@ The project includes an interactive dashboard with the following sections:
 | Seaborn          | Statistical Visualization             |
 | Scikit-learn     | Machine Learning                      |
 | Random Forest    | Classification Algorithm              |
-| Streamlit        | Web Application                       |
+| Streamlit        | Web Application Development           |
 | Joblib           | Model Saving and Loading              |
 | Jupyter Notebook | Model Development and Experimentation |
 
@@ -209,7 +215,7 @@ The project includes an interactive dashboard with the following sections:
 ## 📂 Project Structure
 
 ```text
-Iris-MLOps-Project/
+Iris-MLOps-Project-Public/
 │
 ├── Iris-MLOps-Project.ipynb
 │
@@ -222,13 +228,15 @@ Iris-MLOps-Project/
 └── README.md
 ```
 
-**File Description:**
+### File Description
 
-* `Iris-MLOps-Project.ipynb` – Notebook containing dataset analysis, model training, and evaluation.
-* `app.py` – Streamlit application source code.
-* `iris_rf_model.joblib` – Saved trained Random Forest model.
-* `requirements.txt` – Required Python libraries.
-* `README.md` – Project documentation.
+| File                       | Description                                                           |
+| -------------------------- | --------------------------------------------------------------------- |
+| `Iris-MLOps-Project.ipynb` | Notebook containing dataset analysis, model training, and evaluation. |
+| `app.py`                   | Source code for the Streamlit web application.                        |
+| `iris_rf_model.joblib`     | Saved trained Random Forest model.                                    |
+| `requirements.txt`         | Required Python libraries.                                            |
+| `README.md`                | Project documentation.                                                |
 
 ---
 
@@ -239,22 +247,22 @@ Follow these steps to run the project on your local system.
 ### Step 1: Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_LINK
+git clone https://github.com/muskan-gupta01/Iris-MLOps-Project-Public.git
 ```
 
-### Step 2: Open the Project Folder
+### Step 2: Navigate to the Project Folder
 
 ```bash
-cd Iris-MLOps-Project
+cd Iris-MLOps-Project-Public
 ```
 
-### Step 3: Create a Virtual Environment (Optional)
+### Step 3: Create a Virtual Environment (Recommended)
 
 ```bash
 python -m venv venv
 ```
 
-Activate the environment:
+Activate the virtual environment.
 
 **Windows:**
 
@@ -268,7 +276,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### Step 4: Install Required Libraries
+### Step 4: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -286,7 +294,9 @@ The application will open in your default web browser.
 
 ## 📁 Bulk Prediction – CSV Format
 
-To use the Bulk Prediction feature, upload a CSV file containing the following exact column names:
+The Bulk Prediction feature allows users to generate predictions for multiple flower records using a CSV file.
+
+The uploaded CSV file must contain the following exact column names:
 
 ```csv
 sepal length (cm),sepal width (cm),petal length (cm),petal width (cm)
@@ -297,12 +307,12 @@ sepal length (cm),sepal width (cm),petal length (cm),petal width (cm)
 7.1,3.0,5.9,2.1
 ```
 
-### How to Use
+### How to Use Bulk Prediction
 
-1. Open the Streamlit application.
-2. Navigate to **Bulk Prediction**.
+1. Run the Streamlit application.
+2. Navigate to the **Bulk Prediction** section.
 3. Upload your CSV file.
-4. Check the uploaded dataset preview.
+4. Preview the uploaded dataset.
 5. Click on **Predict All Flowers**.
 6. View the prediction results.
 7. Download the results as a CSV file.
@@ -313,34 +323,34 @@ sepal length (cm),sepal width (cm),petal length (cm),petal width (cm)
 
 ## 🚀 Future Improvements
 
-The following improvements can be considered in future versions:
+The following features can be considered for future development:
 
 * Deploy the application on a cloud platform.
-* Add automated model retraining.
-* Implement model monitoring.
+* Implement automated model retraining.
+* Add model monitoring.
+* Explore additional Machine Learning algorithms.
 * Improve prediction reports.
-* Add more Machine Learning algorithms.
-* Improve application performance and user experience.
+* Enhance application performance and user experience.
 
 ---
 
 ## 🎓 Academic Project Information
 
-| Details    | Information                   |
-| ---------- | ----------------------------- |
-| University | Invertis University, Bareilly |
-| Department | Computer Applications         |
-| Course     | BCA (Artificial Intelligence) |
-| Semester   | 3rd Semester                  |
-| Section    | A                             |
-| Project    | Iris MLOps Project            |
-| Domain     | Machine Learning              |
+| Details    | Information                       |
+| ---------- | --------------------------------- |
+| University | Invertis University, Bareilly     |
+| Department | Computer Applications             |
+| Course     | BCA (Artificial Intelligence)     |
+| Semester   | 3rd Semester                      |
+| Section    | A                                 |
+| Project    | Iris Flower Classification System |
+| Domain     | Machine Learning                  |
 
 ---
 
 ## 👥 Team Members – GitHub Profiles
 
-The following students are associated with this project:
+The following students are associated with this academic project:
 
 | S. No. | Team Member     | GitHub Profile                                                        |
 | ------ | --------------- | --------------------------------------------------------------------- |
@@ -363,19 +373,18 @@ The following students are associated with this project:
 
 ## 📝 Conclusion
 
-The Iris MLOps Project demonstrates how Machine Learning can be used to solve a classification problem through a practical web application.
+The Iris Flower Classification System demonstrates the practical application of Machine Learning in solving a classification problem.
 
-By combining dataset analysis, Random Forest classification, model evaluation, and Streamlit development, this project provides an interactive platform for predicting Iris flower species.
+By combining dataset analysis, Random Forest classification, model evaluation, and Streamlit application development, this project provides an interactive platform for predicting Iris flower species.
 
-It also helps students understand important concepts of Machine Learning, data preprocessing, model training, evaluation, and application development.
+It also provides practical learning experience in Python programming, data analysis, Machine Learning model development, and web application development.
 
 ---
 
 <p align="center">
-  <b>🌸 Iris MLOps Project</b><br>
+  <b>🌸 Iris Flower Classification System</b>
+  <br>
   Machine Learning | Data Analysis | Streamlit
-</p>
-
-<p align="center">
-  <i>Developed as an academic project at Invertis University, Bareilly.</i>
+  <br><br>
+  Developed as an academic project at Invertis University, Bareilly.
 </p>
