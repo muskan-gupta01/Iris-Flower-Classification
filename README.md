@@ -114,7 +114,7 @@ The Machine Learning workflow includes:
 
 The trained model is saved as:
 
-`iris_rf_model.joblib`
+`iris_random_forest_model.joblib`
 
 ---
 
@@ -220,11 +220,11 @@ The application provides an interactive dashboard with the following sections:
 ```text
 Iris-Flower-Classification/
 │
-├── Iris-MLOps-Project.ipynb
+├── notebooks/iris_classification.ipynb
 │
 ├── app.py
 │
-├── iris_rf_model.joblib
+├── iris_random_forest_model.joblib
 │
 ├── requirements.txt
 │
@@ -235,9 +235,9 @@ Iris-Flower-Classification/
 
 | File                       | Description                                                           |
 | -------------------------- | --------------------------------------------------------------------- |
-| `Iris-MLOps-Project.ipynb` | Notebook containing dataset analysis, model training, and evaluation. |
+| `notebooks/iris_classification.ipynb` | Notebook containing dataset analysis, model training, and evaluation. |
 | `app.py`                   | Source code for the Streamlit web application.                        |
-| `iris_rf_model.joblib`     | Saved trained Random Forest model.                                    |
+| `iris_random_forest_model.joblib`     | Saved trained Random Forest model.                                    |
 | `requirements.txt`         | Required Python libraries.                                            |
 | `README.md`                | Project documentation.                                                |
 

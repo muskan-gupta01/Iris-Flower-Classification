@@ -118,7 +118,7 @@ def show_flower_image(species):
 # LOAD SAVED MODEL
 # ---------------------------------------------------------
 
-MODEL_PATH = Path(__file__).resolve().parent / "iris_rf_model.joblib"
+MODEL_PATH = Path(__file__).resolve().parent / ""
 
 
 @st.cache_resource
@@ -128,7 +128,7 @@ def load_model(model_path, modified_time):
 
 if not MODEL_PATH.exists():
     st.error(
-        "iris_rf_model.joblib was not found. Keep it in the same folder as app.py."
+        "iris_random_forest_model.joblib was not found. Keep it in the same folder as app.py."
     )
     st.stop()
 
