@@ -2,31 +2,29 @@
 
 <p align="center">
   <b>An Interactive Machine Learning Web Application for Iris Flower Species Prediction</b>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green" alt="Machine Learning">
-  <img src="https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit" alt="Streamlit">
-  <img src="https://img.shields.io/badge/Library-Scikit--learn-orange?logo=scikitlearn" alt="Scikit-learn">
-  <img src="https://img.shields.io/badge/Status-Academic%20Project-success" alt="Project Status">
+  <br><br>
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python">
+  <img src="https://img.shields.io/badge/Machine%20Learning-Random%20Forest-green">
+  <img src="https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit">
+  <img src="https://img.shields.io/badge/Library-Scikit--learn-orange">
+  <img src="https://img.shields.io/badge/Project-Academic-success">
 </p>
 
 ---
 
-## 📌 Project Overview
+## 📌 About the Project
 
-The **Iris Flower Classification System** is a Machine Learning-based web application that predicts the species of an Iris flower using four physical measurements.
+The **Iris Flower Classification System** is a Machine Learning-based web application that predicts the species of an Iris flower using its physical measurements.
 
-The project uses a trained **Random Forest Classifier** to classify flowers into three species:
+The project uses a **Random Forest Classifier**, a supervised Machine Learning algorithm, to classify flowers into three different species:
 
 * Iris Setosa
 * Iris Versicolor
 * Iris Virginica
 
-Users can enter flower measurements manually or upload a CSV file to generate predictions for multiple records.
+Users can enter flower measurements manually or upload a CSV file to predict multiple records at once.
 
-Developed using Python and Streamlit, the application provides an interactive dashboard with prediction results, probability scores, data visualizations, model evaluation metrics, and downloadable prediction reports.
+The application is developed using Python and Streamlit. It provides an interactive dashboard with prediction results, probability scores, data visualizations, model performance metrics, prediction history, and downloadable reports.
 
 **GitHub Repository:**
 https://github.com/muskan-gupta01/Iris-Flower-Classification
@@ -37,14 +35,14 @@ https://github.com/muskan-gupta01/Iris-Flower-Classification
 
 The main objectives of this project are:
 
-* Understand the fundamental Machine Learning workflow.
+* Understand the basic Machine Learning workflow.
 * Explore and analyze the Iris dataset.
 * Perform data preparation and feature analysis.
 * Train a classification model using Random Forest.
-* Evaluate model performance using classification metrics.
+* Evaluate model performance using different metrics.
 * Develop an interactive web application using Streamlit.
-* Enable single and multiple flower predictions.
-* Present prediction results through visualizations and downloadable reports.
+* Provide single and bulk flower predictions.
+* Display results through visualizations and downloadable reports.
 
 ---
 
@@ -52,19 +50,19 @@ The main objectives of this project are:
 
 This project uses the **Iris Dataset** provided by Scikit-learn.
 
-It is a commonly used dataset for supervised Machine Learning classification problems.
+It is a commonly used dataset for understanding supervised Machine Learning and classification problems.
 
-| Dataset Information  | Details                   |
-| -------------------- | ------------------------- |
-| Total Records        | 150                       |
-| Total Input Features | 4                         |
-| Target Classes       | 3                         |
-| Problem Type         | Classification            |
-| Dataset Source       | Scikit-learn Iris Dataset |
+| Dataset Information | Details                   |
+| ------------------- | ------------------------- |
+| Total Records       | 150                       |
+| Input Features      | 4                         |
+| Target Classes      | 3                         |
+| Problem Type        | Classification            |
+| Dataset Source      | Scikit-learn Iris Dataset |
 
 ### Input Features
 
-The model uses the following four measurements:
+The model uses four measurements:
 
 | Feature           | Description         |
 | ----------------- | ------------------- |
@@ -85,9 +83,9 @@ The model predicts one of the following species:
 
 ## 🤖 Machine Learning Model
 
-The project uses the **Random Forest Classifier**, a supervised Machine Learning algorithm used for classification.
+The project uses the **Random Forest Classifier**, a supervised Machine Learning algorithm used for classification tasks.
 
-Random Forest combines multiple Decision Trees and uses their predictions to determine the final output.
+Random Forest combines multiple Decision Trees to generate a final prediction.
 
 ### Model Configuration
 
@@ -101,20 +99,16 @@ Random Forest combines multiple Decision Trees and uses their predictions to det
 
 ### Model Training Workflow
 
-The Machine Learning workflow includes:
-
 1. Load the Iris dataset.
 2. Separate input features and target labels.
 3. Split the dataset into training and testing sets.
 4. Train the Random Forest Classifier.
 5. Generate predictions using test data.
-6. Evaluate the model using classification metrics.
+6. Evaluate the model performance.
 7. Perform 5-fold stratified cross-validation.
 8. Save the trained model using Joblib.
 
-The trained model is saved as:
-
-`iris_random_forest_model.joblib`
+**Saved Model:** `iris_random_forest_model.joblib`
 
 ---
 
@@ -130,9 +124,7 @@ The model is evaluated using the following performance metrics:
 * Confusion Matrix
 * 5-Fold Cross-Validation
 
-These metrics help assess the classification performance of the trained model.
-
-The Streamlit application also provides visual representations of model performance, including a confusion matrix and feature importance.
+The application also provides visual representations of model performance, including confusion matrix and feature importance.
 
 ---
 
@@ -142,10 +134,10 @@ The application provides an interactive dashboard with the following sections:
 
 ### 1. 🏠 Home
 
-* Project introduction.
+* Introduction to the project.
 * Overview of the classification system.
 * Information about the three Iris species.
-* Navigation to application features.
+* Navigation to different application sections.
 
 ### 2. 🔍 Flower Prediction
 
@@ -220,7 +212,8 @@ The application provides an interactive dashboard with the following sections:
 ```text
 Iris-Flower-Classification/
 │
-├── notebooks/iris_classification.ipynb
+├── notebooks/
+│   └── iris_classification.ipynb
 │
 ├── app.py
 │
@@ -233,13 +226,13 @@ Iris-Flower-Classification/
 
 ### File Description
 
-| File                       | Description                                                           |
-| -------------------------- | --------------------------------------------------------------------- |
-| `notebooks/iris_classification.ipynb` | Notebook containing dataset analysis, model training, and evaluation. |
-| `app.py`                   | Source code for the Streamlit web application.                        |
-| `iris_random_forest_model.joblib`     | Saved trained Random Forest model.                                    |
-| `requirements.txt`         | Required Python libraries.                                            |
-| `README.md`                | Project documentation.                                                |
+| File                                  | Description                                      |
+| ------------------------------------- | ------------------------------------------------ |
+| `notebooks/iris_classification.ipynb` | Dataset analysis, model training, and evaluation |
+| `app.py`                              | Streamlit web application source code            |
+| `iris_random_forest_model.joblib`     | Saved trained Random Forest model                |
+| `requirements.txt`                    | Required Python libraries                        |
+| `README.md`                           | Project documentation                            |
 
 ---
 
@@ -259,7 +252,7 @@ git clone https://github.com/muskan-gupta01/Iris-Flower-Classification.git
 cd Iris-Flower-Classification
 ```
 
-### Step 3: Create a Virtual Environment (Recommended)
+### Step 3: Create a Virtual Environment
 
 ```bash
 python -m venv venv
@@ -376,7 +369,7 @@ The following students are associated with this academic project:
 
 ## 📝 Conclusion
 
-The Iris Flower Classification System demonstrates the practical application of Machine Learning in solving a classification problem.
+The **Iris Flower Classification System** demonstrates the practical application of Machine Learning in solving a classification problem.
 
 By combining dataset analysis, Random Forest classification, model evaluation, and Streamlit application development, this project provides an interactive platform for predicting Iris flower species.
 
